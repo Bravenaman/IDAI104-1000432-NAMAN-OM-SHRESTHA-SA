@@ -4,10 +4,14 @@
 # 🚀 Space Mission Launch Path Explorer
 **🚀 Rocket Mission Dashboard**
 
-**Student Name:** Naman Om Shrestha 
+**Student Name:** Naman Om Shrestha
+
 **Student ID:** 1000432
+
 **Course:** Artificial Intelligence  
+
 **Focus:** Mathematics for AI-I  
+
 **Assessment Type:** Summative Assessment (SA)  
 
 ## 📌 Project Overview
