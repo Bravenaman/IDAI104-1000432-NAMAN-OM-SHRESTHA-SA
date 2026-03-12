@@ -118,7 +118,79 @@ Ans. Adding more payload increases the rocket’s total mass. Since acceleration
 Ans. Yes. As the rocket climbs higher into the atmosphere, air density decreases. This reduces drag and allows the rocket to travel faster with less resistance.
 
 ---
+## Dashboard UI
 
+This folder contains the **Dashboard UI module** of the application.  
+It provides a visual interface for monitoring key metrics, navigation between sections, and interacting with system data through charts, widgets, and tables.
+
+---
+
+## Overview
+
+The Dashboard is designed to provide users with a **centralized control panel** where important information is displayed in an organized and interactive layout.
+
+Key goals of the dashboard:
+- Quick access to important data
+- Clear visual representation of metrics
+- Easy navigation between system modules
+- Responsive and modern UI components
+
+---
+
+## Screenshots
+
+### 1. Dashboard Overview
+![Dashboard Overview](./screenshots/1.png)
+
+Displays the main dashboard layout including summary cards and navigation elements.
+
+---
+
+### 2. Analytics Section
+![Analytics Section](./screenshots/2.png)
+
+Shows analytical components such as charts, graphs, or statistics panels that visualize system data.
+
+---
+
+### 3. Activity / Data Table
+![Data Table](./screenshots/3.png)
+
+Displays structured data in a table format for easier monitoring and management.
+
+---
+
+### 4. Widget Components
+![Widgets](./screenshots/4.png)
+
+Contains interactive widgets or quick-action components used to display key information.
+
+---
+
+### 5. Detailed Metrics View
+![Metrics](./screenshots/5.png)
+
+Provides expanded insights into performance indicators or tracked metrics.
+
+---
+
+### 6. User Interaction / Controls
+![Controls](./screenshots/6.png)
+
+Shows user interaction elements such as filters, buttons, or navigation controls.
+
+---
+
+## Features
+
+- Modern dashboard layout
+- Data visualization (charts, graphs)
+- Interactive widgets
+- Table-based data display
+- Navigation between dashboard modules
+- Responsive UI design
+
+---
 ## 📁 Repository Structure
 
 To meet the deployment criteria, the repository is organized as follows:
