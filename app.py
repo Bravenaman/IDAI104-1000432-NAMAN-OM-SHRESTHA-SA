@@ -159,7 +159,8 @@ with tab1:
         )
 
         st.plotly_chart(fig, use_container_width=True)
-        (Analysis:- The altitude curve shows a steady acceleration during the launch phase, eventually reaching the target altitude. The trajectory crossing the target threshold indicates a successful mission completion.
+        
+        st.code(""" Analysis:The altitude increases steadily over time as thrust overcomes the combined mass of fuel and payload. The trajectory eventually crosses the target altitude threshold, indicating a successful launch profile. This demonstrates how thrust, fuel mass, and payload influence the rocket’s ascent performance. """)
         if altitude.max() > 15000:
             st.success("🎉 Mission Success! Target altitude reached.")
         else:
