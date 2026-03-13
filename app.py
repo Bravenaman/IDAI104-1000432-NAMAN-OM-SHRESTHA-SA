@@ -160,7 +160,10 @@ with tab1:
 
         st.plotly_chart(fig, use_container_width=True)
         
-        st.code(""" Analysis:The altitude increases steadily over time as thrust overcomes the combined mass of fuel and payload. The trajectory eventually crosses the target altitude threshold, indicating a successful launch profile. This demonstrates how thrust, fuel mass, and payload influence the rocket’s ascent performance. """)
+        st.code(""" Analysis:
+        The altitude increases steadily over time as thrust overcomes the combined mass of fuel and payload. 
+        The trajectory eventually crosses the target altitude threshold, indicating a successful launch profile. 
+        This demonstrates how thrust, fuel mass, and payload influence the rocket’s ascent performance. """)
         if altitude.max() > 15000:
             st.success("🎉 Mission Success! Target altitude reached.")
         else:
@@ -210,26 +213,56 @@ with tab2:
 
     fig1 = px.scatter(df, x="Payload Weight", y="Fuel Consumption", color="Mission Result")
     st.plotly_chart(fig1, use_container_width=True)
-
+    
+    st.code(""" Analysis:
+    Fuel consumption increases strongly with payload weight, showing a clear positive correlation.
+    Heavier payloads require significantly more fuel to achieve the same mission trajectory.
+    This highlights payload mass as a primary driver of fuel requirements. """)
+    
     cost_df = df.groupby("Mission Result")["Mission Cost"].mean().reset_index()
     fig2 = px.bar(cost_df, x="Mission Result", y="Mission Cost", color="Mission Result")
     st.plotly_chart(fig2, use_container_width=True)
-
+    
+    st.code(""" Analysis: 
+    Average mission cost appears similar for both successful and failed missions.
+    This suggests that higher spending alone does not guarantee mission success, 
+    indicating other operational factors may influence outcomes. """)
+    
     duration_df = df.sort_values("Mission Duration")
     fig3 = px.line(duration_df, x="Mission Duration", y="Distance from Earth")
     st.plotly_chart(fig3, use_container_width=True)
-
+    
+    st.code(""" Analysis:
+    As mission duration increases, the distance from Earth generally increases as well, showing a clear upward trend.
+    However, the fluctuations indicate that mission conditions or parameters can cause variations in distance progression during the simulation. 🚀 """)
+    
     fig4 = px.box(df, x="Crew Size", y="Mission Success %")
     st.plotly_chart(fig4, use_container_width=True)
-
+    
+    st.code(""" Analysis:
+    Mission success rates generally stay high across all crew sizes, with medians around the 75–85% range.
+    Larger crews show slightly more consistent performance, but overall the difference between crew sizes is not drastic, 
+    suggesting crew size has only a moderate impact on mission success. """)
+    
     fig5 = px.scatter(df, x="Mission Cost", y="Scientific Yield", color="Crew Size")
     st.plotly_chart(fig5, use_container_width=True)
-
+    
+    st.code(""" Analysis:
+    Scientific yield varies widely across mission costs, 
+    showing no strong direct correlation between cost and research output.
+    Crew size distribution suggests that larger teams do not always produce proportionally higher scientific yield.""")
+    
     corr = df.corr(numeric_only=True).round(2)
     fig_heatmap = px.imshow(corr, text_auto=True, color_continuous_scale="viridis")
 
     st.plotly_chart(fig_heatmap, use_container_width=True)
-
+    
+    st.code(""" Analysis:
+    The heatmap reveals strong correlations between payload weight and fuel consumption, 
+    and between mission duration and distance from Earth.
+    Most other variables show weak correlations, 
+    suggesting relatively independent effects across mission parameters.""")
+    
     st.markdown('</div>', unsafe_allow_html=True)
 
 # -----------------------------------
