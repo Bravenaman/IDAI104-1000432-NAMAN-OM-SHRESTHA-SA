@@ -167,17 +167,45 @@ Contains interactive widgets or quick-action components used to display key info
 
 ---
 
-### 5. Detailed Metrics View
-![Metrics](./screenshots/5.png)
+### 5. System Monitoring
+![System Monitoring](./screenshots/5.png)
 
-Provides expanded insights into performance indicators or tracked metrics.
+Provides visual monitoring of system metrics and operational indicators through graphs or status displays.
 
 ---
 
 ### 6. User Interaction / Controls
 ![Controls](./screenshots/6.png)
 
-Shows user interaction elements such as filters, buttons, or navigation controls.
+Shows user interaction elements such as filters, buttons, or navigation controls used to manage the dashboard.
+
+---
+
+### 7. Mission Result Analysis
+![Mission Results](./screenshots/7.png)
+
+Visual comparison of mission outcomes, highlighting success and failure metrics with cost analysis.
+
+---
+
+### 8. Mission Duration vs Distance
+![Mission Duration vs Distance](./screenshots/8.png)
+
+Illustrates the relationship between mission duration and distance traveled from Earth.
+
+---
+
+### 9. Scientific Yield vs Mission Cost
+![Scientific Yield](./screenshots/9.png)
+
+Scatter plot showing how scientific yield varies across missions with different cost levels and crew sizes.
+
+---
+
+### 10. Correlation Heatmap
+![Correlation Heatmap](./screenshots/10.png)
+
+Displays correlations between mission variables such as payload weight, fuel consumption, mission duration, scientific yield, and mission success rate.
 
 ---
 
